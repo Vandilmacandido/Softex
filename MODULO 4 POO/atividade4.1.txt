@@ -1,0 +1,86 @@
+Classe Caneta 
+
+     atributos:
+
+	marca: CARACTERE;
+	cor: CARACTERE;	
+	tampada: LOGICO;
+
+     métodos:
+
+	desenhar;
+	escrever;
+	pintar;
+
+     instanciando objeto:
+
+      Caneta c1 = new Caneta();
+	c1.marca = BIC;
+	c1.cor = Azul;
+	c1.tampada = false;
+______________________________
+Classe Carro
+
+     atributos:
+
+	marca: CARACTERE;
+	modelo: CARACTERE;
+	ano: INTEIRO;
+     
+     métodos:
+	
+	dirigir;
+	freiar;
+	acelerar;
+
+     instanciando objeto:
+
+      Carro c2 = new Carro();
+	c2.marca = Fiat;
+	c2.modelo = uno;
+	c2.ano = 2020;
+________________________________
+Classe Musica
+
+    atributos:
+
+	nome: CARACTERE;
+	genero: CARACTERE;
+	cantor: CARACTERE;
+    
+    métodos:
+
+	cantar;
+	ouvir;
+	escrever;
+
+   instanciando objeto:
+
+	Musica c3 = new Musica();
+	  c3.nome = Let Be
+	  c3.genero = Rock
+	  c3.cantor = The Beatles
+
+___________________________________
+Classe TransacaoBancaria
+
+     atributos:
+
+	banco: CARACTERE;
+	transacao: CARACTERE;
+	valor: REAL;
+
+     métodos:
+
+	pagar;
+	receber;
+	emprestimo;
+
+     instanciando objeto:
+
+        TransacaoBancaria c4 = new TransacaoBancaria();
+	 c4.banco = Santander;
+	 c4.transacao = trasferencia Pix;
+	 c4.valor = 250,99
+
+FimClasse
