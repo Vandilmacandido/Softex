@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS_atividade5</title>
+    </head>
+    <body>
+        <h3>Calculadora Simples</h3>
+
+        <script>
+            let n1, n2, op, res
+            n1 = parseFloat(prompt("Digite um número:"));
+            n2 = parseFloat(prompt("Digite outro número:"));
+            op = prompt("Digite um operador(+;-;*;/):");
+
+            switch(op){
+                case '+':
+                    res = n1 + n2;
+                    document.write(`A soma entre ${n1} + ${n2} = ${res}`);
+                    break;
+                case '-':
+                    res = n1 - n2;
+                    document.write(`A subtração entre ${n1} - ${n2} = ${res}`);
+                    break;
+                case '*':
+                    res = n1 * n2;
+                    document.write(`A multiplicação entre ${n1} * ${n2} = ${res}`);
+                    break;
+                case '/':
+                    if(n2 != 0){
+                        res = n1 / n2;
+                        document.write(`A divisão entre ${n1} / ${n2} = ${res}`);
+                        if (n1 % n2 != 0){
+                            let mod = n1 % n2;
+                            document.write(` O resto é igual a: ${mod}`);
+                        }
+                    }
+                    else{
+                        document.write("ERRo!");
+                    }
+                    break;
+                default:
+                    document.write("Não foi escolhido nenhum operador!");
+                    break;
+            }
+        </script>
+
+    </body>
+</html>
