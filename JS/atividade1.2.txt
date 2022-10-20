@@ -1,0 +1,16 @@
+Aluna: Vandilma Candido
+
+Atividade proposta: Com ajuda da leitura complementar, você deve configurar o seu ambiente de desenvolvimento JavaScript. 
+Esse ambiente pode ser uma IDE ou um editor de código-fonte. Para isso, você deve levar em consideração alguns pontos: 
+O seu ambiente precisa programar na linguagem JavaScript; 
+Se necessário, configure seu ambiente; 
+Deixe ele pronto para uso, ou seja, sem mais configurações. 
+
+Escreva, no mínimo, um parágrafo mostrando seu ambiente configurado, explique sua escolha. 
+
+-----------------------------------------------------------------------------------------------
+
+Para utilização para linguagem JavaScript, escolhi a ferramenta VSCode; esse editor de texto com fucionalidades adicionais.
+O VSCode possui um suporte para depuração, com controle de git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
+Outra coisa interesante desse editor é a costumização dando a opção do usuário mudar o tema do editor.
+Tambem escolhi essa ferramenta pois ela é extramanente ulizada para desenvolvimento de utilizando Node.JS
