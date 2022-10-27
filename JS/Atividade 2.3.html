@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_atividade2.3</title>
+</head>
+<body>
+    <header>
+        <h2>Notas</h2>
+    </header>
+    <section>
+        <div>
+            <label for="numero1">1º Nota</label>
+            <input type="number" id="numero1" min="0" max="10">
+        </div>
+        <br>
+        <div>
+            <label for="numero2">2º Nota</label>
+            <input type="number" id="numero2" min="0" max="10">
+        
+            <input type="button" value="Saber se vai passar..." onclick="calculoNotas()">
+        </div>
+        <br>
+        <div id="terceiraNota"></div>
+        <br>
+        <div>
+            <label for="numero3">3º Nota</label>
+            <input type="number" id="numero3" min="0" max="10">
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Resultado!" onclick="resultado()">
+        </div>
+        <br>
+        <div id="mediaFinal"></div>
+    </section> 
+    <script>
+        function calculoNotas(){
+            var n1 = document.getElementById('numero1');
+            var n2 = document.getElementById('numero2');
+            var nota3 = document.getElementById('terceiraNota');
+
+            let resposta = 21 - Number(n1.value) - Number(n2.value);
+            
+            if(resposta  < 11){
+                nota3.innerHTML = `O Aluno precisa tirar ${resposta}, para passar!`;
+            } 
+            else{
+                nota3.innerHTML = `O Aluno vai para a Recuperação!`;
+            }
+        }
+
+        function resultado(){
+            var n1 = document.getElementById('numero1');
+            var n2 = document.getElementById('numero2');
+            var n3 = document.getElementById('numero3');
+            var media = document.getElementById('mediaFinal');
+
+            let resposta = (Number(n1.value) + Number(n2.value) + Number(n3.value)) / 3;
+
+            media.innerHTML = (resposta >= 7) ? `APROVADO!!!O aluno obteve a média de ${resposta}!` : `REPROVADO!!!O aluno obteve a média de ${resposta}!`;
+            
+        }    
+    </script>
+</body>
+</html>
