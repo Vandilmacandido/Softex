@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css" media="screen">
+    <title>Formulário Galáctico</title>
+</head>
+<body>
+    <img class="entrada" src="entrada.png">
+    <div class="campo">
+        <h1 id="titulo">Derrube o Império Galáctico</h1>
+        <p id="descrição">Olá Rebelde aqui você pode receber às notícias e informações sobre a luta contra o império.</p><br>
+        <p id="subtitulo">Mas antes preciso que você preencha o formulário abaixo:</p>
+        <br>
+    </div>
+    <from>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="sobrenome" id="sobrenome" required>
+            </div>
+
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>De qual lugar da galáxia você é?</strong></label>
+            <input type="text" nome="lugar" id="lugar" required>
+        </div>
+        <div class="campo">
+            <label><strong>Qual é a frequencia que gostaria de receber às notícias:</strong></label>
+            <label>
+                <input type="radio" nome="asvezes" volue="asvezes">As Vezes 
+            </label>
+            <label>
+                <input type="radio" nome="sempre" volue="sempre">Sempre
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Data de Nascimento</strong></label>
+            <input type="date" nome="data" id="data">
+        </div>
+
+        <button class="botao" type="submit">enviar</button>
+
+        <img class="rodape-imagem" src="rodape.png" alt="Rodapé da pagina nele esta escrito que a força esteja com você" width="50%" height="50%">
+    </from>
+
+</body>
+</html>
