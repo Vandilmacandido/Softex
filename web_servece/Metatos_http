@@ -1,0 +1,62 @@
+Os métodos Http são: Get, Post, Put/Patch, Delete e alguns podem receber parâmetros ou não.
+
+•	Get –  Esse é um método mais utilizado, é usado para quando queremos buscar algo do back-end.
+Exemplo: 
+app.get (‘/cars’, (request, response) => {
+	Retun response.send(results);
+});
+
+•	Post – é utilizado para criar uma informação no Back-end.
+Exemplo:
+app.post('/cars', (request, response) => {
+  const { name, model } = request.body;
+  const car = { id: uuid(), name, model };
+
+  cars.push(car);
+
+  return response.send(cars);
+});
+
+•	Put/Putch – Seve para alterar uma informação ou todas as informações de um recurso no back-end.
+Exemplo:
+app.put('/cars/:id', (request, response) => {
+  const { id } = request.params;
+  const { name, model } = request.body;
+
+  const carIndex = cars.findIndex(car => car.id === id);
+  if (carIndex < 0) {
+    return response
+      .status(400)
+      .json({ error: 'Car not found.' });
+  }
+
+  const car = {
+    id,
+    name,
+    model
+  }
+
+  cars[carIndex] = car;
+  return response.send(car);
+});
+
+•	Delete -  É utilizado quando precisamos deletar algum recurso no back-end.
+Exemplo: 
+app.delete('/cars/:id', (request, response) => {
+  const { id } = request.params;
+
+  const carIndex = cars.findIndex(car => car.id === id);
+  if (carIndex < 0) {
+    return response
+      .status(400)
+      .json({ error: 'Car not found.' });
+  }
+
+  cars.splice(carIndex, 1);
+  return response.json({ message: 'car deleted.' });
+});
+
+WSDL: 
+
+WSDL é uma notação XML para descrever um serviço da web. 
+Uma definição WSDL indica a um cliente como compor uma solicitação de serviço da web e descreve a interface que é fornecida pelo provedor de serviços da web.
