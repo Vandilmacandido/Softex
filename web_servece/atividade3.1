@@ -1,0 +1,42 @@
+Operações com o CRUD e suas rotas em um servidor local na porta 3030.
+
+
+Create: Irá incluir um novo livro.
+Rota: POST http://localhost:3030/books
+
+
+{
+    "name": "Orgulho e Preconceito",
+    "author": "Jane Austen",
+    "isbn": "9788592797591"
+}
+
+
+
+Read: Irá listar todos os livros da livraria.
+Rota: GET http://localhost:3030/books
+
+
+{
+    "name": "Orgulho e Preconceito",
+    "author": "Jane Austen",
+    "isbn": "9788592797591"
+}
+
+
+
+Update: Irá atualizar um determinado livro correspondente ao seu id.
+ Rota: PUT http://localhost:3030/books/:id
+
+{
+    "id": 435,
+    "name": "Orgulho e Preconceito",
+    "author": "Jane Austen",
+    "isbn": "9788592797591"
+}
+
+
+
+
+Delete: Irá excluir determinado livro correspondente ao seu id.
+ Rota: DELETE http://localhost:3030/books/books/:id
