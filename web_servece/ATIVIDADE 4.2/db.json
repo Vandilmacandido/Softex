@@ -1,0 +1,87 @@
+{
+  "alunos": [
+    {
+      "id": 2,
+      "nome": "Maria José",
+      "serie": "3º ano",
+      "nota": 9.8,
+      "aprovado": true
+    },
+    {
+      "id": 3,
+      "nome": "Pedro José",
+      "serie": "3º ano",
+      "nota": 8,
+      "aprovado": true
+    },
+    {
+      "id": 4,
+      "nome": "José Paulo",
+      "serie": "3º ano",
+      "nota": 7.9,
+      "aprovado": true
+    },
+    {
+      "id": 5,
+      "nome": "Luiza Sofia",
+      "serie": "3º ano",
+      "nota": 5,
+      "aprovado": false
+    },
+    {
+      "id": 6,
+      "nome": "Leila Araujo",
+      "serie": "3º ano",
+      "nota": 6.5,
+      "aprovado": true
+    },
+    {
+      "id": 7,
+      "nome": "Maria José",
+      "serie": "3º ano",
+      "nota": 9.8,
+      "aprovado": true
+    },
+    {
+      "id": 8,
+      "nome": "Josefa Maria",
+      "serie": "3º ano",
+      "nota": 9.8,
+      "aprovado": true
+    },
+    {
+      "id": 9,
+      "nome": "Luis agusto",
+      "serie": "3º ano",
+      "nota": 4.5,
+      "aprovado": false
+    },
+    {
+      "id": 10,
+      "nome": "João Manuel",
+      "serie": "3º ano",
+      "nota": 8.6,
+      "aprovado": true
+    },
+    {
+      "id": 11
+    }
+  ],
+  "proferssor": [
+    {
+      "id": 1,
+      "nome": "Fernanda Pessoa",
+      "materia": "Português"
+    },
+    {
+      "id": 2,
+      "nome": "Luiz Fernando",
+      "materia": "Matematica"
+    },
+    {
+      "id": 3,
+      "nome": "Luiz Fernando",
+      "materia": "Historia"
+    }
+  ]
+}
