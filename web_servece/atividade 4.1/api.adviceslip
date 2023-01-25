@@ -1,0 +1,12 @@
+https://api.adviceslip.com/advice
+
+usando get no isonia 
+
+resposta
+
+{
+	"slip": {
+		"id": 195,
+		"advice": "Exercise in the rain can really make you feel alive."
+	}
+}
