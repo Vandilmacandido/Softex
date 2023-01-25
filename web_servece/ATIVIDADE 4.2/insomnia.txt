@@ -1,0 +1,13 @@
+Resources
+  http://localhost:3000/alunos
+  http://localhost:3000/proferssor
+
+  Home
+  http://localhost:3000
+
+DELETE /alunos/1 200 20.620 ms - 2
+PATCH /alunos/2 200 35.566 ms - 95
+POST /alunos/11 404 19.098 ms - 2
+POST /alunos 201 13.946 ms - 14
+GET /proferssor/3 200 23.689 ms - 65
+GET /proferssor/2?embed=alunos 200 16.763 ms - 67
